@@ -91,3 +91,26 @@ while(decision == ""):
 print()
 time.sleep(1)
 #            ---section end---           #
+
+#    ----Section Author: Aqib----   #
+
+print("You encounter a creature that looks aggressive")
+print("1. Attempt to attack it")
+print("2. Evade from its path")
+print()
+decision = ""
+while(decision == ""):
+    decision = input("Pick a number: ")
+    print()
+    if(decision == "1"):
+        print("You defeated it but have taken damage")
+        player_health -= 25
+        print("Your health now:")
+        print(player_health)
+    elif(decision == "2"):
+        print("You safely got away and found money along the way")
+        player_money += 15
+        print("Your money amount now:")
+        print(player_money)
+print()
+time.sleep(2)
